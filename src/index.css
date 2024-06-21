@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* CSS untuk navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #007bff; 
+  padding: 10px; 
+  color: white; 
+  height: 50px;
+}
+
+/* CSS untuk judul bootcamp */
+.navbar .left {
+  flex: 1;
+  font-size: 10px;
+}
+
+/* CSS untuk navigasi menu*/
+.navbar .right {
+  display: flex; 
+  margin-right: 20px;
+}
+
+.navbar nav a {
+  color: white; 
+  margin-left: 10px; 
+  text-decoration: none; 
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
