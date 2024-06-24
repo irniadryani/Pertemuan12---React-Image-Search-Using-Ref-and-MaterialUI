@@ -1,22 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css"; // Import file CSS untuk styling
+import React from "react"; //library js yang membuat user interface
+import ReactDOM from "react-dom"; //library js membantu react untuk berinteraksi dgn dom (memunculkan di browser)
+import App from "./App";
 
-const navbar = (
-  <div className="navbar">
-    <div className="left">
-      <h1>BOOTCAMP Batch 1: Experiment</h1>
-    </div>
-    <div className="right">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-      </nav>
-    </div>
-  </div>
-);
-
-const element = <h1>This is React</h1>;
-
-ReactDOM.render(element, document.getElementById("root"));
-ReactDOM.render(navbar, document.getElementById("navbar"));
+//menampilkan components yang telah ditampung di app.js
+ReactDOM.render(<App />, document.getElementById("root"));
