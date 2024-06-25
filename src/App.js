@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar"
 import Content from "./components/Content"
 import ListComment from './components/ListComment';
+import Clock from './components/Clock';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Navbar/>
     <Content/>
     <ListComment/>
+    <Clock/>
    </div>
   );
 }

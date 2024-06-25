@@ -2,10 +2,9 @@ import React from "react";
 
 class CommentComponent extends React.Component {
   render() {
-    //mengambil nilai properti dari props untuk digunakan dalam komponen
-    const { avatar, name, day, time, comment } = this.props;
+    const { avatar, name, day, time, comment, like, onLike } = this.props; //menerima variabel dari props
+
     return (
-      //mengatur struktur dalam menampilkan comment
       <div className="comment">
         <a className="avatar">
           <img src={avatar} alt="avatar" />
@@ -14,12 +13,12 @@ class CommentComponent extends React.Component {
           <a className="author">{name}</a>
           <div className="metadata">
             <span className="date">
-              {day} {time}
+              {day} {time} <a>| Liked: {like}</a>
             </span>
           </div>
           <div className="text">{comment}</div>
           <div className="actions">
-            <a className="reply">Reply</a>
+            <button onClick={onLike}>Click me</button>
           </div>
         </div>
       </div>
