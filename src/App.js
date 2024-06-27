@@ -11,10 +11,10 @@ function App() {
     //menampung component yang telah diimport
    <div>
     <Navbar/>
-    {/* <Clock/>
+     {/* <Clock/> */}
     <Content/>
-    <ListComment/>  */}
-    <Form/>
+    {/* <ListComment/> */}
+    {/* <Form/> */}
     <ImageSearch/>
    </div>
   );

@@ -35,41 +35,43 @@ class Form extends React.Component {
     const { valueName, valueMobile, valueEmail } = this.state; // Mengambil nilai dari state
     return (
       // Merancang form input
-      <form className="ui form" onSubmit={this.handleSubmit}>
-        <div className="three wide field">
-          <label>Name</label>
-          <input
-            type="text"
-            name="valueName" // Name harus sesuai dengan properti di state
-            placeholder="Name"
-            value={valueName} 
-            onChange={this.handleChange} // Menangani perubahan input
-          />
-        </div>
-        <div className="three wide field">
-          <label>Mobile</label>
-          <input
-            type="text"
-            name="valueMobile" 
-            placeholder="Number Phone"
-            value={valueMobile} 
-            onChange={this.handleChange} // Menangani perubahan input
-          />
-        </div>
-        <div className="three wide field">
-          <label>Email</label>
-          <input
-            type="text"
-            name="valueEmail" 
-            placeholder="Email"
-            value={valueEmail} 
-            onChange={this.handleChange} // Menangani perubahan input
-          />
-        </div>
-        <button className="ui button" type="submit">
-          Submit
-        </button>
-      </form>
+      <div className="ui container">
+        <form className="ui form centered" onSubmit={this.handleSubmit}>
+          <div className="ten wide field">
+            <label>Name</label>
+            <input
+              type="text"
+              name="valueName" // Name harus sesuai dengan properti di state
+              placeholder="Name"
+              value={valueName}
+              onChange={this.handleChange} // Menangani perubahan input
+            />
+          </div>
+          <div className="ten wide field">
+            <label>Mobile</label>
+            <input
+              type="text"
+              name="valueMobile"
+              placeholder="Number Phone"
+              value={valueMobile}
+              onChange={this.handleChange} // Menangani perubahan input
+            />
+          </div>
+          <div className="ten wide field">
+            <label>Email</label>
+            <input
+              type="text"
+              name="valueEmail"
+              placeholder="Email"
+              value={valueEmail}
+              onChange={this.handleChange} // Menangani perubahan input
+            />
+          </div>
+          <button className="ui button" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     );
   }
 }

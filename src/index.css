@@ -45,3 +45,27 @@ code {
   text-decoration: underline;
 }
 
+.form {
+  width: 50%; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+/* index.css */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 0;
+}
+
+.image-item {
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
